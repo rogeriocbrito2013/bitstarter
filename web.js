@@ -1,5 +1,5 @@
 var express = require('express');
-
+var fs = require('fs');
 var app = express.createServer(express.logger());
 
 var index = fs.readFile('index.html'),'utf-8');
