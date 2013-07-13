@@ -2,10 +2,10 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-//var index =  new Buffer(fs.readFile('index.html'),'utf-8');
+var index = fs.readFile('index.html'),'utf-8');
 
 app.get('/', function(request, response) {
-  response.send('Hello World 2X');
+  response.send(index);
 });
 
 
